@@ -1,16 +1,12 @@
 # Evaluating Diagnostic Recognition Blind Spots in Small Models: A Cross-Model Study of Endometriosis
 
-*Note: this is the submission for the Fatima Fellowship Application Fall 2026 technical challenge.*
-
-*Answer to [Question 1](https://huggingface.co/datasets/duaa-amer/ai-blind-spot-evaluation-dataset#blind-spot-question-1) and [Question 3](https://huggingface.co/datasets/duaa-amer/ai-blind-spot-evaluation-dataset#path-forward-question-3)*
-
 Healthcare practitioners, when faced with atypical manifestations of diseases, often resort to hypothesis generation and revision if classic pattern recognition doesn’t suffice. This raises the question that sits at the heart of this evaluation: **How does a model perform when faced with a presentation of a disease that departs from the classic textbook pattern?**
 
 Standard benchmarks can measure whether a model accurately recognizes a disease. However, aggregate accuracy doesn’t reveal any behavioral information about the robustness of atypical diagnostic recognition.
 
 This is critical in the case of underdiagnosed diseases that manifest through atypical presentations, such as endometriosis. Endometriosis is a disease that can manifest either typically or atypically, with an average diagnostic delay of 7 years [1]. Typical presentations of the disease include pelvic and reproductive symptoms, while atypical presentations include gastrointestinal, urinary, thoracic, and extrapelvic symptoms.
 
-## Blind Spot (Question 1)
+## Blind Spot 
 
 I evaluate the ability of a model to accurately recognize endometriosis across both typical *and* atypical manifestations. I do this by asking three questions:
 
@@ -88,7 +84,7 @@ Both models performed equally on recognition of typical endometriosis presentati
 
 Overall, the results suggest that model domain specialization doesn’t always guarantee better performance in diagnostic application.
 
-## Path Forward (Question 3)
+## Path Forward 
 
 **First, I look towards data curation strategies.** Here, the challenge is twofold:
 - *Diversity of clinical presentations.* Therefore I  propose the inclusion of more atypical cases in the training data, especially cases where endometriosis occurs alongside unrelated symptoms. 
